@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#9AE4E8" 
+  android:weightSum="1" android:orientation="vertical">
+<LinearLayout 
+android:id="@+id/linearLayout2"
+android:weightSum="1" 
+android:layout_height="wrap_content" 
+android:layout_width="fill_parent">
+    <ImageView 
+    android:layout_weight="1" 
+    android:layout_height="wrap_content" 
+    android:layout_width="wrap_content" 
+    android:id="@+id/imageView1" 
+    android:src="@drawable/tweettalker_logo" 
+    android:layout_gravity="center">
+    </ImageView>
+</LinearLayout>
+<LinearLayout 
+android:layout_height="wrap_content" 
+android:id="@+id/linearLayout3" 
+android:layout_width="fill_parent" android:layout_marginRight="20px" android:layout_marginLeft="20px">
+    <EditText 
+    android:layout_height="wrap_content" 
+    android:id="@+id/textBox" 
+    android:layout_width="fill_parent" 
+    android:layout_weight="1" 
+    android:textColorHighlight="#33CCFF" 
+    android:cursorVisible="true" 
+    android:maxLength="140" 
+    android:inputType="textMultiLine"
+    android:lines="5"
+    android:minLines="5"
+    android:maxLines="5"
+    android:gravity="top|left" android:clickable="false">
+</EditText>
+</LinearLayout>
+<LinearLayout 
+android:layout_height="wrap_content" 
+android:weightSum="1" 
+android:id="@+id/linearLayout1" 
+android:layout_gravity="center_horizontal" 
+android:layout_width="wrap_content">
+    <Button 
+    android:id="@+id/startOverButton" 
+    android:background="@drawable/trash" 
+    android:layout_margin="15dp" android:layout_width="48px" android:layout_height="48px">
+    </Button>
+    <Button 
+    android:id="@+id/addButton" 
+    android:background="@drawable/plus" 
+    android:layout_margin="15dp" android:layout_weight="0.33" android:layout_width="48px" android:layout_height="48px">
+    </Button>
+    <Button 
+    android:id="@+id/tweetButton" 
+    android:background="@drawable/logo" 
+    android:layout_margin="15dp" android:layout_weight="0.33" android:layout_width="48px" android:layout_height="48px">
+    </Button>
+</LinearLayout>
+<LinearLayout android:id="@+id/linearLayout4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical"></LinearLayout>
+</LinearLayout>
